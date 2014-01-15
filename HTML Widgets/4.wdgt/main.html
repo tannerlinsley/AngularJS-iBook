@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Remove automatic highlighting of telephone numbers -->
+  <meta name="format-detection" content="telephone=no">
+
+  <script type="text/javascript" src="AppleClasses/AppleWidget.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+  <script type='text/javascript' src='angular.js' charset='utf-8'></script>
+  <script src="components.js"></script>
+  <script src="beers.js"></script>
+</head>
+<body>
+  <div class="window">
+    <div class="content">
+      <div class="example" ng-app="components">
+        <h3>Locale: US</h3>
+        <tabs>
+          <pane title="Localization">
+            Date: {{ '2012-04-01' | date:'fullDate' }} <br>
+            Currency: {{ 123456 | currency }} <br>
+            Number: {{ 98765.4321 | number }} <br>
+          </pane>
+          <pane title="Pluralization">
+            <div ng-controller="BeerCounter">
+              <div ng-repeat="beerCount in beers">
+                <ng-pluralize count="beerCount" when="beerForms"></ng-pluralize>
+              </div>
+            </div>
+          </pane>
+        </tabs>
+
+
+      </div>
+
+      <div class="code">
+        <img src="images/1.png" alt="" />
+        <img src="images/2.png" alt="" />
+        <img src="images/3.png" alt="" />
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <!-- Load Scrolling Javascript -->
+  <script src="js/libs/jquery-1.7.2.min.js"></script>
+  <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+  <!-- Load Custom Javascript -->
+  <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

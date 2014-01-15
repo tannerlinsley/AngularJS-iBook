@@ -1,0 +1,34 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color:#dd1b16;
+}
+
+.example{
+	padding: 1em;
+	max-width:768px;
+}
+
+.code{
+	padding: 2em 0;
+	background:white;
+	margin-bottom:100em;
+}
+
+.code img{
+	max-width:100%;
+	height:auto;
+	margin:0 auto 4em;
+	display:block;
+	padding:0;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	--moz-border-radius: 5px;
+}
+
+input{
+	font-size:24px;
+}

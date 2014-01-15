@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Remove automatic highlighting of telephone numbers -->
+  <meta name="format-detection" content="telephone=no">
+
+  <script type="text/javascript" src="AppleClasses/AppleWidget.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <script type='text/javascript' src='angular.js' charset='utf-8'></script>
+  <script src="todo.js"></script>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <div class="window">
+    <div class="content">
+
+      <div class="example">
+
+        <h2>Todo</h2>
+        <div ng-controller="TodoCtrl">
+          <span>{{remaining()}} of {{todos.length}} remaining</span>
+          [ <a href="" ng-click="archive()">archive</a> ]
+          <ul class="unstyled">
+            <li ng-repeat="todo in todos">
+              <input type="checkbox" ng-model="todo.done">
+              <span class="done-{{todo.done}}">{{todo.text}}</span>
+            </li>
+          </ul>
+          <form ng-submit="addTodo()">
+            <input type="text" ng-model="todoText"  size="30"
+            placeholder="add new todo here">
+            <input class="btn-primary" type="submit" value="add">
+          </form>
+        </div>
+
+      </div>
+
+      <div class="code">
+        <img src="images/1.png" alt="" />
+        <img src="images/2.png" alt="" />
+        <img src="images/3.png" alt="" />
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <!-- Load Scrolling Javascript -->
+  <script src="js/libs/jquery-1.7.2.min.js"></script>
+  <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+  <!-- Load Custom Javascript -->
+  <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

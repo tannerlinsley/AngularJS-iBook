@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Remove automatic highlighting of telephone numbers -->
+  <meta name="format-detection" content="telephone=no">
+
+  <script type="text/javascript" src="AppleClasses/AppleWidget.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <script type='text/javascript' src='angular.js' charset='utf-8'></script>
+</head>
+<body>
+  <div class="window">
+    <div class="content">
+
+      <div class="example">
+        <label>Name:</label>
+        <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <h1>Hello {{yourName}}!</h1>
+      </div>
+
+      <div class="code">
+        <img src="images/1_html.png" alt="" class="codeimage"/>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Load Scrolling Javascript -->
+  <script src="js/libs/jquery-1.7.2.min.js"></script>
+  <script src="js/libs/jquery-ui-1.8.21.custom.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+  <!-- Load Custom Javascript -->
+  <script type="text/javascript" src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

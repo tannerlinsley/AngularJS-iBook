@@ -1,0 +1,26 @@
+/* Define the scrolling window, best left alone unless you want scroll area less than full-screen */
+
+.window {
+      width:1024px;
+      height:768px;
+}
+
+/* Put your styles here */
+
+body {
+	margin:0;
+ 	background: #eee;
+	color: #111;
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+
+a, a:active, a:visited {
+  	color: #99f;
+}
+
+.content {
+    padding: 60px 0 0;
+    /* to avoid overlapping the fixed 'close' button on the widget, 
+    content requires a minimum padding-top: 30px; padding-left: 30px; */
+}
